@@ -25,7 +25,7 @@ namespace CiscoSecurityAutomation
         {
             InitializeComponent();
             ClsAutoUpdate checkforupdate = new ClsAutoUpdate();
-            checkforupdate.checkforupdates();
+           // checkforupdate.checkforupdates();
             lstFiles.Items.Add("Double click to choose files");
         }
 
@@ -53,6 +53,7 @@ namespace CiscoSecurityAutomation
         {
             Window1 results = new Window1(lstFiles.Items.Cast<string>().ToList());
             System.Windows.Forms.MessageBox.Show("Error processing " + lstFiles.Items.Count.ToString() + " files.", "Fatal Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            results.ShowDialog();
         }
     }
 }

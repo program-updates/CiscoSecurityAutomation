@@ -15,7 +15,7 @@ namespace CiscoSecurityAutomation
         public void checkforupdates()
         {
             MessageBox.Show("Please remember that this software is in the beta stage.");
-            string updateurl = @"https://github.com/katy-yardborough-projects/CiscoAutoSecure/update.txt";
+            string updateurl = @"https://github.com/katy-yardborough-projects/CiscoSecurityAutomation/tree/master/CiscoSecurityAutomation/update.txt";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(updateurl);
             request.AutomaticDecompression = DecompressionMethods.GZip;
             string updateresponse = "";
